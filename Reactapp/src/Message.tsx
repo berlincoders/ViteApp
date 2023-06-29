@@ -6,7 +6,7 @@
 
 function Message() {
 //JSX  javascript XML declaration  
-return <h1> hello world</h1>;
+return <h1> Hello world</h1>;
 }
 
 // to use the component, we need to export it
