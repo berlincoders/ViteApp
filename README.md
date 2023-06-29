@@ -10,6 +10,9 @@ https://www.youtube.com/watch?v=SqcY0GlETPk&t=124s
 Want to learn more? Get to Mosh React mastery course: http://bit.ly/3l0vWYR
 
 React Ecosystem
+
 Building Components
+
 Creating a ListGroup Component
+
 Fragments
