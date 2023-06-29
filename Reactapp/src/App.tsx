@@ -1,10 +1,12 @@
 // ./ means the current directory
-import Message from "./Message";
+import ListGroup from "./components/ListGroup";
+
 
 function App() {
+  return <div>  <ListGroup /> </div>;
+  }
+  // using this  <listGroup />, it is the same that using <ListGroup > <listGroup/>
 
-return <div><Message></Message></div>;
-  // we are ussing the new component as a regular tag html  element
-}
+
 export default App;
 // we nned also to export the App component in order to use it in other files
