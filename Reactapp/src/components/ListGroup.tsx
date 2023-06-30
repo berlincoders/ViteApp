@@ -1,7 +1,12 @@
 // import { Fragment } from "react";
+import { MouseEvent } from "react";
 
 function ListGroup() {
   const items = ["New York", "Los Angeles", "Chicago", "San Francisco"];
+  let selectedIndex = 0;
+
+  // Event handlers
+  const handleClick = (event: MouseEvent) => console.log(event);
 
   // please check the name of the item is different from the list array, called items, (plural)
   // also take in consideration to render the item, in a dinamic way must be in brackets
@@ -11,8 +16,18 @@ function ListGroup() {
     <>
       <h1>List</h1>
       <ul className="list-group">
-        {items.map((item) => (
-          <li key={item}>{item}</li>
+        {items.map((item, index) => (
+          <li
+            className={
+              selectedIndex === index
+                ? "list-group-item active"
+                : "list-group-item"
+            }
+            key={item}
+            onClick={handleClick}
+          >
+            {item}
+          </li>
         ))}
       </ul>
     </>
