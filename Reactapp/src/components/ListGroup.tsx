@@ -1,15 +1,19 @@
 // import { Fragment } from "react";
 
 function ListGroup() {
+  const items = ["New York", "Los Angeles", "Chicago", "San Francisco"];
+
+  // please check the name of the item is different from the list array, called items, (plural)
+  // also take in consideration to render the item, in a dinamic way must be in brackets
+  // check the map funtion in javascript
+  // wrap expresion in brackets,  select + option + 8, save it .
   return (
     <>
       <h1>List</h1>
       <ul className="list-group">
-        <li className="list-group-item">An item</li>
-        <li className="list-group-item">A second item</li>
-        <li className="list-group-item">A third item</li>
-        <li className="list-group-item">A fourth item</li>
-        <li className="list-group-item">And a fifth one</li>
+        {items.map((item) => (
+          <li key={item}>{item}</li>
+        ))}
       </ul>
     </>
   );
